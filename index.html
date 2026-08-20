@@ -3,7 +3,11 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 <title>Chandan Sharma | HR Professional</title>
+
+<meta name="description"
+content="Chandan Sharma - HR Professional with 6+ years of experience in HR Operations, Site HR, Administration, Recruitment, Employee Relations, Payroll Coordination and HR Analytics.">
 
 <style>
 *{
@@ -17,7 +21,7 @@ body{
   font-family:Arial,Helvetica,sans-serif;
   background:#07111f;
   color:#f5f7fb;
-  line-height:1.6;
+  line-height:1.7;
 }
 
 a{
@@ -31,17 +35,19 @@ a{
   margin:auto;
 }
 
+/* NAVBAR */
+
 nav{
   position:sticky;
   top:0;
   z-index:1000;
-  background:rgba(7,17,31,.92);
-  backdrop-filter:blur(15px);
+  background:rgba(7,17,31,.96);
+  backdrop-filter:blur(12px);
   border-bottom:1px solid #1d2b40;
 }
 
 .navbar{
-  min-height:72px;
+  min-height:70px;
   display:flex;
   align-items:center;
   justify-content:space-between;
@@ -58,46 +64,48 @@ nav{
 
 .navlinks{
   display:flex;
-  gap:28px;
+  gap:25px;
 }
 
 .navlinks a{
   color:#b8c4d6;
   font-size:14px;
+  transition:.3s;
 }
 
 .navlinks a:hover{
   color:#45d6c8;
 }
 
+/* HERO */
+
 .hero{
   min-height:88vh;
   display:flex;
   align-items:center;
-  padding:80px 0;
+  padding:70px 0;
 }
 
 .hero-grid{
   display:grid;
-  grid-template-columns:1.3fr .7fr;
-  gap:60px;
+  grid-template-columns:1.5fr .8fr;
+  gap:50px;
   align-items:center;
 }
 
 .badge{
   display:inline-block;
   padding:8px 15px;
-  border:1px solid #29435b;
+  border:1px solid #29405b;
   border-radius:30px;
   color:#45d6c8;
-  background:#0d1d2d;
   font-size:13px;
   margin-bottom:20px;
 }
 
 h1{
-  font-size:clamp(42px,7vw,76px);
-  line-height:1.05;
+  font-size:55px;
+  line-height:1.1;
   margin-bottom:20px;
 }
 
@@ -105,35 +113,40 @@ h1 span{
   color:#45d6c8;
 }
 
+.hero h2{
+  font-size:24px;
+  color:#c9d4e4;
+  margin-bottom:18px;
+}
+
 .hero p{
   color:#aebbd0;
-  font-size:18px;
-  max-width:680px;
-  margin-bottom:30px;
+  max-width:700px;
+  font-size:17px;
 }
 
 .buttons{
   display:flex;
-  gap:14px;
+  gap:15px;
+  margin-top:30px;
   flex-wrap:wrap;
 }
 
 .btn{
   padding:13px 22px;
-  border-radius:10px;
+  border-radius:8px;
   font-weight:700;
-  display:inline-block;
-  transition:.25s;
+  border:1px solid #45d6c8;
+  transition:.3s;
 }
 
-.primary{
+.btn-primary{
   background:#45d6c8;
-  color:#061018;
+  color:#07111f;
 }
 
-.secondary{
-  border:1px solid #344960;
-  color:#fff;
+.btn-secondary{
+  color:#45d6c8;
 }
 
 .btn:hover{
@@ -141,191 +154,255 @@ h1 span{
 }
 
 .profile-card{
-  background:linear-gradient(145deg,#102238,#0a1625);
-  border:1px solid #233a53;
-  border-radius:25px;
-  padding:25px;
   text-align:center;
-  box-shadow:0 25px 70px rgba(0,0,0,.35);
 }
 
 .profile-card img{
-  width:210px;
-  height:210px;
+  width:250px;
+  height:250px;
   object-fit:cover;
   border-radius:50%;
   border:5px solid #45d6c8;
-  margin-bottom:18px;
+  box-shadow:0 0 45px rgba(69,214,200,.15);
 }
 
-.profile-card h2{
-  margin-bottom:5px;
-}
-
-.profile-card p{
-  font-size:14px;
-  color:#9eacc0;
-}
+/* SECTIONS */
 
 section{
-  padding:90px 0;
+  padding:85px 0;
 }
 
 .section-title{
-  text-align:center;
-  margin-bottom:50px;
+  font-size:34px;
+  margin-bottom:12px;
 }
 
-.section-title small{
+.section-title span{
   color:#45d6c8;
-  font-weight:700;
-  letter-spacing:2px;
 }
 
-.section-title h2{
-  font-size:38px;
-  margin-top:8px;
+.section-subtitle{
+  color:#8fa0b8;
+  margin-bottom:35px;
 }
 
-.about{
+/* ABOUT */
+
+.about-grid{
   display:grid;
   grid-template-columns:1fr 1fr;
-  gap:35px;
+  gap:25px;
 }
 
 .card{
-  background:#0c1a2b;
-  border:1px solid #20354c;
-  border-radius:18px;
+  background:#0c1929;
+  border:1px solid #1d2b40;
+  border-radius:14px;
   padding:28px;
+  transition:.3s;
+}
+
+.card:hover{
+  transform:translateY(-5px);
+  border-color:#45d6c8;
+}
+
+.card h3{
+  margin-bottom:12px;
+  color:#45d6c8;
 }
 
 .card p{
   color:#aebbd0;
 }
 
-.stats{
-  display:grid;
-  grid-template-columns:repeat(2,1fr);
-  gap:15px;
-}
+/* EXPERIENCE */
 
-.stat{
-  padding:25px;
-  background:#102238;
-  border-radius:15px;
-  text-align:center;
-}
-
-.stat strong{
-  display:block;
-  font-size:32px;
-  color:#45d6c8;
-}
-
-.stat span{
-  color:#9eacc0;
-  font-size:13px;
-}
-
-.skills{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:20px;
-}
-
-.skill{
-  background:#0c1a2b;
-  border:1px solid #20354c;
-  border-radius:16px;
-  padding:25px;
-}
-
-.skill h3{
-  margin-bottom:8px;
-}
-
-.skill p{
-  color:#9eacc0;
-  font-size:14px;
-}
-
-.experience{
-  max-width:850px;
-  margin:auto;
+.timeline{
+  border-left:2px solid #29405b;
+  padding-left:30px;
 }
 
 .job{
-  border-left:3px solid #45d6c8;
-  padding:5px 0 30px 25px;
-  margin-bottom:10px;
+  margin-bottom:35px;
+  position:relative;
+}
+
+.job:before{
+  content:"";
+  position:absolute;
+  width:12px;
+  height:12px;
+  background:#45d6c8;
+  border-radius:50%;
+  left:-37px;
+  top:8px;
 }
 
 .job h3{
   font-size:21px;
 }
 
-.job .date{
+.company{
   color:#45d6c8;
-  font-size:13px;
-  margin:5px 0 10px;
+  font-weight:700;
 }
 
-.job p{
+.date{
+  color:#8292a9;
+  font-size:14px;
+  margin:4px 0 12px;
+}
+
+.job ul{
+  padding-left:20px;
   color:#aebbd0;
 }
 
-.contact{
+.job li{
+  margin-bottom:7px;
+}
+
+/* SKILLS */
+
+.skills{
+  display:flex;
+  flex-wrap:wrap;
+  gap:12px;
+}
+
+.skill{
+  background:#0c1929;
+  border:1px solid #29405b;
+  padding:10px 15px;
+  border-radius:8px;
+  color:#c9d4e4;
+  font-size:14px;
+}
+
+.skill:hover{
+  border-color:#45d6c8;
+  color:#45d6c8;
+}
+
+/* EDUCATION */
+
+.education-grid{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:25px;
+}
+
+/* CERTIFICATIONS */
+
+.cert-grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:20px;
+}
+
+.cert{
+  background:#0c1929;
+  border:1px solid #1d2b40;
+  padding:25px;
+  border-radius:14px;
+}
+
+.cert h3{
+  color:#45d6c8;
+  margin-bottom:8px;
+}
+
+.cert p{
+  color:#aebbd0;
+  font-size:14px;
+}
+
+/* CONTACT */
+
+.contact-box{
   text-align:center;
-}
-
-.contact-card{
-  max-width:750px;
-  margin:auto;
-  background:linear-gradient(145deg,#102238,#0b1827);
-  border:1px solid #29435b;
-  border-radius:22px;
+  background:#0c1929;
+  border:1px solid #1d2b40;
   padding:45px 25px;
+  border-radius:16px;
 }
 
-.contact-card p{
+.contact-box p{
   color:#aebbd0;
-  margin:15px auto 25px;
+  margin:8px 0;
 }
+
+.contact-links{
+  margin-top:25px;
+  display:flex;
+  justify-content:center;
+  flex-wrap:wrap;
+  gap:15px;
+}
+
+.contact-links a{
+  padding:11px 17px;
+  border:1px solid #29405b;
+  border-radius:8px;
+  color:#45d6c8;
+}
+
+/* FOOTER */
 
 footer{
-  text-align:center;
-  padding:30px;
   border-top:1px solid #1d2b40;
-  color:#7f8da1;
-  font-size:13px;
+  text-align:center;
+  padding:25px;
+  color:#718198;
+  font-size:14px;
 }
 
+/* MOBILE */
+
 @media(max-width:800px){
+
   .navlinks{
     display:none;
   }
 
-  .hero-grid,
-  .about{
+  .hero{
+    padding:55px 0;
+  }
+
+  .hero-grid{
+    grid-template-columns:1fr;
+    text-align:center;
+  }
+
+  .hero p{
+    margin:auto;
+  }
+
+  .buttons{
+    justify-content:center;
+  }
+
+  h1{
+    font-size:40px;
+  }
+
+  .about-grid,
+  .education-grid{
     grid-template-columns:1fr;
   }
 
-  .hero{
-    padding:60px 0;
-  }
-
-  .skills{
+  .cert-grid{
     grid-template-columns:1fr;
   }
 
   .profile-card{
-    max-width:350px;
-    margin:auto;
+    order:-1;
   }
 
-  section{
-    padding:65px 0;
+  .profile-card img{
+    width:190px;
+    height:190px;
   }
 }
 </style>
@@ -333,243 +410,531 @@ footer{
 
 <body>
 
-<nav>
-  <div class="container navbar">
-    <div class="logo">Chandan<span>.</span></div>
+<!-- NAVIGATION -->
 
-    <div class="navlinks">
-      <a href="#about">About</a>
-      <a href="#skills">Skills</a>
-      <a href="#experience">Experience</a>
-      <a href="#contact">Contact</a>
-    </div>
-  </div>
+<nav>
+<div class="container navbar">
+
+<div class="logo">
+Chandan <span>Sharma</span>
+</div>
+
+<div class="navlinks">
+<a href="#about">About</a>
+<a href="#experience">Experience</a>
+<a href="#skills">Skills</a>
+<a href="#education">Education</a>
+<a href="#certifications">Certifications</a>
+<a href="#contact">Contact</a>
+</div>
+
+</div>
 </nav>
 
-<section class="hero">
-  <div class="container hero-grid">
 
-    <div>
-      <div class="badge">HR PROFESSIONAL • PEOPLE & CULTURE</div>
+<!-- HERO -->
 
-      <h1>
-        Building better<br>
-        <span>workplaces & teams.</span>
-      </h1>
+<header class="hero">
+<div class="container hero-grid">
 
-      <p>
-        I am Chandan Sharma, an HR Professional focused on
-        Recruitment, HR Operations, Employee Relations,
-        Talent Acquisition, Onboarding and People Management.
-      </p>
+<div>
 
-      <div class="buttons">
-        <a class="btn primary" href="#contact">Let's Connect</a>
-        <a class="btn secondary" href="#experience">View Experience</a>
-      </div>
-    </div>
+<div class="badge">
+HR PROFESSIONAL • 6+ YEARS EXPERIENCE
+</div>
 
-    <div class="profile-card">
-      <img src="profile.png" alt="Chandan Sharma">
-      <h2>Chandan Sharma</h2>
-      <p>HR Professional | Recruitment | HR Operations</p>
-    </div>
+<h1>
+Chandan <span>Sharma</span>
+</h1>
 
-  </div>
-</section>
+<h2>
+HR Operations | Site HR | HR Administration
+</h2>
+
+<p>
+Results-driven HR professional with 6+ years of experience across
+HR Operations, Site HR, Administration, Recruitment, Employee Relations,
+Payroll Coordination, Labour Law Compliance and Workforce Management.
+</p>
+
+<div class="buttons">
+
+<a class="btn btn-primary"
+href="#contact">
+Contact Me
+</a>
+
+<a class="btn btn-secondary"
+href="#experience">
+View Experience
+</a>
+
+</div>
+
+</div>
+
+
+<div class="profile-card">
+
+<img src="profile.png" alt="Chandan Sharma">
+
+</div>
+
+</div>
+</header>
+
+
+<!-- ABOUT -->
 
 <section id="about">
-  <div class="container">
 
-    <div class="section-title">
-      <small>ABOUT ME</small>
-      <h2>People. Process. Performance.</h2>
-    </div>
+<div class="container">
 
-    <div class="about">
+<h2 class="section-title">
+About <span>Me</span>
+</h2>
 
-      <div class="card">
-        <p>
-          With professional experience in Human Resources, I work
-          across recruitment, employee coordination, onboarding,
-          HR operations and people management.
-          <br><br>
-          My approach combines people skills, structured processes
-          and business understanding to create a positive employee
-          experience while supporting organisational goals.
-        </p>
-      </div>
+<p class="section-subtitle">
+Professional profile and core strengths
+</p>
 
-      <div class="stats">
-        <div class="stat">
-          <strong>5+</strong>
-          <span>Years Experience</span>
-        </div>
+<div class="about-grid">
 
-        <div class="stat">
-          <strong>HR</strong>
-          <span>Professional Focus</span>
-        </div>
+<div class="card">
 
-        <div class="stat">
-          <strong>360°</strong>
-          <span>People Management</span>
-        </div>
+<h3>Professional Profile</h3>
 
-        <div class="stat">
-          <strong>100%</strong>
-          <span>People Focused</span>
-        </div>
-      </div>
+<p>
+I am an HR professional with 6+ years of experience in
+HR Operations, Site HR and Administration within EPC,
+Infrastructure and Oil & Gas environments.
+</p>
 
-    </div>
-  </div>
-</section>
+</div>
 
-<section id="skills">
-  <div class="container">
+<div class="card">
 
-    <div class="section-title">
-      <small>CORE EXPERTISE</small>
-      <h2>What I Do</h2>
-    </div>
+<h3>What I Do</h3>
 
-    <div class="skills">
+<p>
+Employee lifecycle management, recruitment and onboarding,
+payroll coordination, attendance and leave management,
+contractor relations, statutory compliance, HR reporting,
+workforce planning and site administration.
+</p>
 
-      <div class="skill">
-        <h3>Recruitment</h3>
-        <p>
-          Candidate sourcing, screening, interviews,
-          selection and hiring coordination.
-        </p>
-      </div>
+</div>
 
-      <div class="skill">
-        <h3>Talent Acquisition</h3>
-        <p>
-          Building talent pipelines and supporting
-          business hiring requirements.
-        </p>
-      </div>
+<div class="card">
 
-      <div class="skill">
-        <h3>HR Operations</h3>
-        <p>
-          Employee records, HR documentation,
-          coordination and daily HR processes.
-        </p>
-      </div>
+<h3>HR Analytics</h3>
 
-      <div class="skill">
-        <h3>Employee Relations</h3>
-        <p>
-          Employee communication, engagement,
-          issue resolution and workplace support.
-        </p>
-      </div>
+<p>
+Experienced in Advanced Excel, HR dashboards, manpower
+reports, MIS reporting, Pivot Tables, Power Query,
+VLOOKUP, XLOOKUP and HR analytics.
+</p>
 
-      <div class="skill">
-        <h3>Onboarding</h3>
-        <p>
-          Smooth joining experience, documentation
-          and employee induction coordination.
-        </p>
-      </div>
+</div>
 
-      <div class="skill">
-        <h3>People Management</h3>
-        <p>
-          Supporting employees, managers and teams
-          to create a productive workplace.
-        </p>
-      </div>
+<div class="card">
 
-    </div>
-  </div>
-</section>
+<h3>Site & Administration</h3>
 
-<section id="experience">
-  <div class="container">
+<p>
+Experience in camp administration, accommodation,
+transport coordination, facility management, vendor
+coordination and workforce/site operations.
+</p>
 
-    <div class="section-title">
-      <small>CAREER</small>
-      <h2>Professional Experience</h2>
-    </div>
+</div>
 
-    <div class="experience">
-
-      <div class="job">
-        <h3>HR Professional</h3>
-        <div class="date">5+ YEARS OF PROFESSIONAL EXPERIENCE</div>
-        <p>
-          Managing recruitment, employee coordination,
-          HR operations, onboarding, employee relations
-          and people-related activities.
-        </p>
-      </div>
-
-      <div class="job">
-        <h3>Recruitment & Talent Acquisition</h3>
-        <div class="date">CORE HR FUNCTION</div>
-        <p>
-          Supporting end-to-end recruitment activities
-          from sourcing candidates to selection and joining.
-        </p>
-      </div>
-
-      <div class="job">
-        <h3>HR Operations & Employee Relations</h3>
-        <div class="date">PEOPLE OPERATIONS</div>
-        <p>
-          Coordinating HR processes and maintaining
-          effective communication between employees
-          and management.
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-<section id="contact">
-  <div class="container contact">
-
-    <div class="section-title">
-      <small>CONTACT</small>
-      <h2>Let's Connect</h2>
-    </div>
-
-    <div class="contact-card">
-
-      <h2>Looking for an HR Professional?</h2>
-
-      <p>
-        I am open to professional opportunities,
-        HR collaborations and meaningful conversations.
-      </p>
-
-      <div class="buttons" style="justify-content:center;">
-
-        <a class="btn primary"
-           href="mailto:yourmail@example.com">
-          Email Me
-        </a>
-
-        <a class="btn secondary"
-           href="https://www.linkedin.com/"
-           target="_blank">
-          LinkedIn
-        </a>
-
-      </div>
-
-    </div>
+</div>
 </div>
 </section>
 
+
+<!-- EXPERIENCE -->
+
+<section id="experience">
+
+<div class="container">
+
+<h2 class="section-title">
+Professional <span>Experience</span>
+</h2>
+
+<p class="section-subtitle">
+Career journey in HR, administration and workforce management
+</p>
+
+<div class="timeline">
+
+
+<div class="job">
+
+<h3>Sr. Executive – HR & Admin</h3>
+
+<div class="company">
+EPP Composites Pvt. Ltd.
+</div>
+
+<div class="date">
+January 2026 – Present | MPL Project, Mundra
+</div>
+
+<ul>
+
+<li>
+Spearheading end-to-end HR operations including employee
+lifecycle management, recruitment and onboarding.
+</li>
+
+<li>
+Managing payroll inputs, leave management and attendance
+through COSEC Matrix for 250+ employees.
+</li>
+
+<li>
+Managing contractor relations, labour documentation and
+statutory compliance.
+</li>
+
+<li>
+Designing HR dashboards, manpower reports and MIS using
+Advanced Excel.
+</li>
+
+<li>
+Managing camp administration, accommodation, transport,
+housekeeping and facility management.
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="job">
+
+<h3>Executive – HR & Administration</h3>
+
+<div class="company">
+Megha Engineering & Infrastructures Ltd. (MEIL)
+</div>
+
+<div class="date">
+2024 – January 2026
+</div>
+
+<ul>
+
+<li>
+Streamlined HR operations and administrative processes
+across project sites.
+</li>
+
+<li>
+Handled visitor management, gate pass coordination and
+office logistics.
+</li>
+
+<li>
+Managed transport, accommodation, facility management,
+canteen operations and vendor coordination.
+</li>
+
+<li>
+Maintained statutory compliance, labour documentation,
+contractor records and audit documentation.
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="job">
+
+<h3>Team Supervisor</h3>
+
+<div class="company">
+IHMCL Project
+</div>
+
+<div class="date">
+2021 – 2024
+</div>
+
+<ul>
+
+<li>
+Led workforce supervision, shift planning and daily work
+allocation.
+</li>
+
+<li>
+Managed workforce planning and site coordination.
+</li>
+
+<li>
+Supported HSE compliance through inspections, safety
+awareness programs and toolbox talks.
+</li>
+
+</ul>
+
+</div>
+
+
+<div class="job">
+
+<h3>Supervisor</h3>
+
+<div class="company">
+Soma Enterprise Ltd. – IOCL Project
+</div>
+
+<div class="date">
+2019 – 2021
+</div>
+
+<ul>
+
+<li>
+Managed manpower planning, workforce coordination,
+shift scheduling and daily work allocation.
+</li>
+
+<li>
+Ensured adherence to HSE standards, quality procedures
+and site safety regulations.
+</li>
+
+<li>
+Managed manpower deployment and team coordination to
+support workforce productivity.
+</li>
+
+</ul>
+
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- SKILLS -->
+
+<section id="skills">
+
+<div class="container">
+
+<h2 class="section-title">
+Core <span>Skills</span>
+</h2>
+
+<p class="section-subtitle">
+HR, analytics, administration and technology skills
+</p>
+
+<div class="skills">
+
+<div class="skill">HR Operations</div>
+<div class="skill">HR Generalist</div>
+<div class="skill">Site HR</div>
+<div class="skill">HR Administration</div>
+<div class="skill">Recruitment</div>
+<div class="skill">Employee Lifecycle</div>
+<div class="skill">Employee Relations</div>
+<div class="skill">Payroll Coordination</div>
+<div class="skill">Attendance & Leave</div>
+<div class="skill">Labour Law Compliance</div>
+<div class="skill">Industrial Relations</div>
+<div class="skill">Statutory Compliance</div>
+<div class="skill">HR Documentation</div>
+<div class="skill">Manpower Planning</div>
+<div class="skill">MIS Reporting</div>
+<div class="skill">HR Analytics</div>
+<div class="skill">Advanced Excel</div>
+<div class="skill">Power Query</div>
+<div class="skill">Pivot Table</div>
+<div class="skill">VLOOKUP</div>
+<div class="skill">XLOOKUP</div>
+<div class="skill">MIS Dashboard</div>
+<div class="skill">HRMS</div>
+<div class="skill">COSEC Matrix</div>
+<div class="skill">ERP</div>
+<div class="skill">Vendor Management</div>
+<div class="skill">Camp Administration</div>
+<div class="skill">Facility Management</div>
+<div class="skill">Microsoft Word</div>
+<div class="skill">PowerPoint</div>
+<div class="skill">Outlook</div>
+<div class="skill">Google Workspace</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- EDUCATION -->
+
+<section id="education">
+
+<div class="container">
+
+<h2 class="section-title">
+Education
+</h2>
+
+<p class="section-subtitle">
+Academic background
+</p>
+
+<div class="education-grid">
+
+<div class="card">
+
+<h3>Bachelor of Arts (B.A.)</h3>
+
+<p>
+Completed in 2021.
+</p>
+
+</div>
+
+<div class="card">
+
+<h3>Bachelor of Business Administration (BBA)</h3>
+
+<p>
+Academic qualification listed in professional profile.
+</p>
+
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- CERTIFICATIONS -->
+
+<section id="certifications">
+
+<div class="container">
+
+<h2 class="section-title">
+Professional <span>Certifications</span>
+</h2>
+
+<p class="section-subtitle">
+Professional development and technical certifications
+</p>
+
+<div class="cert-grid">
+
+<div class="cert">
+
+<h3>Advanced Excel & HR Analytics</h3>
+
+<p>
+Advanced Corporate Training certification covering
+advanced spreadsheet engineering, data modeling,
+dynamic macro implementations and HR analytics.
+</p>
+
+</div>
+
+
+<div class="cert">
+
+<h3>Advanced Professional HR Generalist</h3>
+
+<p>
+Advanced Professional HR Generalist Certification
+with Distinction.
+</p>
+
+</div>
+
+
+<div class="cert">
+
+<h3>RS-CITE</h3>
+
+<p>
+Professional certification listed in the CV.
+</p>
+
+</div>
+
+
+<div class="cert">
+
+<h3>Web Designing Certification</h3>
+
+<p>
+Web designing certification listed in the professional
+profile.
+</p>
+
+</div>
+
+</div>
+</div>
+</section>
+
+
+<!-- CONTACT -->
+
+<section id="contact">
+
+<div class="container">
+
+<div class="contact-box">
+
+<h2 class="section-title">
+Let's <span>Connect</span>
+</h2>
+
+<p>
+Open to opportunities in HR Operations, HR Generalist,
+Site HR, HR Administration and Assistant Manager HR roles.
+</p>
+
+<div class="contact-links">
+
+<a href="mailto:chandan07ksg@gmail.com">
+Email Me
+</a>
+
+<a href="tel:+919352599057">
+Call Me
+</a>
+
+<a href="https://www.linkedin.com/in/chandan-hr-9b9959322"
+target="_blank">
+LinkedIn
+</a>
+
+</div>
+
+</div>
+
+</div>
+</section>
+
+
+<!-- FOOTER -->
+
 <footer>
-  © 2026 Chandan Sharma — HR Professional Portfolio
+
+© 2026 Chandan Sharma • HR Professional Portfolio
+
 </footer>
 
 </body>
-</html>
+  </html>
